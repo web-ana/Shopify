@@ -11,7 +11,7 @@ let showModal = function () {
 
   if (defaultVal == currentVal) {
     document.getElementById("demo").innerHTML =
-      "We sent a confirmation link to: default email";
+      "We sent a confirmation link to:" + defaultValue;
   } else {
     document.getElementById("demo").innerHTML =
       "We sent a confirmation link to: " + currentVal;
