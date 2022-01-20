@@ -8,6 +8,7 @@
     <title>Shopify</title>
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/modal.css">
 </head>
 
 <body>
@@ -22,9 +23,16 @@
             <div class="email-container d-flex">
                 <label for="email"></label>
 
-                <input type="email" id="email" pattern=".+@gmail\.com" size="40" placeholder="Enter your email address"
-                    required>
-                <button class="btn">Start free trial</button>
+                <input type="email" id="email" size="40" value="johndoe@example.com"
+                    placeholder="Enter your email address" required>
+                <button type="button" class="btn modalBtn">Start free trial</button>
+                <!-- Modal -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p id="demo"></p>
+                    </div>
+                </div>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, error quisquam. Harum impedit qui id eum
                 pariatur tempora veritatis, eius exercitationem explicabo voluptatum provident dolor. Amet natus iste
